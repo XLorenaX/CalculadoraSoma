@@ -18,8 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         numero1 = (EditText) findViewById(R.id.num1);
         numero2 = (EditText) findViewById(R.id.num2);
-
+        
         Button bsoma = (Button) findViewById(R.id.bsoma);
+        bsoma.setOnClickListener(this);
     }
 
 
