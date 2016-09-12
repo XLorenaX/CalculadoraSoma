@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    EditText numero1;
-    EditText numero2;
+    EditText numero1 = (EditText) findViewById(R.id.num1);
+    EditText numero2 = (EditText) findViewById(R.id.num2);
     TextView result = (TextView) findViewById(R.id.result);
 
 
@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        numero1 = (EditText) findViewById(R.id.num1);
-        numero2 = (EditText) findViewById(R.id.num2);
+        
         
         Button bsoma = (Button) findViewById(R.id.bsoma);
         bsoma.setOnClickListener(this);
